@@ -11,11 +11,8 @@
     <section class="showcase">
         <header>
             <h2 class="logo">XXX</h2>
-            <div class="toggle"></div>
+            <div class="toggle"></div>   
         </header>
-
-       
-
 
         <div class="overlay"></div>
         
@@ -35,31 +32,40 @@
             </li>
         </ul>
 
-        <div class="menu">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Projekts</a>
-                    <a href="#">Customer Care</a>
-                    <a href="#">Login/Sign Up</a>   
-                </li>
-            </ul>
-        </div>
         <video src="" muted loop autoplay></video>
         <div class="socials">
             <ul>
                 <li>
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="logo-twitter"></ion-icon>
-                    <ion-icon name="logo-discord"></ion-icon>
-                    <ion-icon name="logo-xbox"></ion-icon>
+                    <a href="https://www.instagram.com/"> <ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.twitter.com/"> <ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://www.discord.com/"> <ion-icon name="logo-discord"></ion-icon></a>
+                        <a href="https://www.xbox.com/"> <ion-icon name="logo-xbox"></ion-icon></a>   
                 </li>
             </ul>
         </div>
     </section>
 
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">Projects</a></li> 
+            <li><a href="#">About</a></li> 
+            <li><a href="#">News</a></li>
+            <li><a href="#">Login/Sign Up</a></li>
+        </ul>  
+    </div>    
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', ()=>{
+          menuToggle.classList.toggle('active')
+          showcase.classList.toggle('active')  
+        })
+    </script>
 </body>
 </html>
